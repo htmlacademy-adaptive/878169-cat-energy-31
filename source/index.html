@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/16.png">
+    <link rel="icon" href="favicons/32.png">
+    <link rel="icon" href="favicons/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo-image" href="index.html" aria-current="page">
-        <img src="images/mobile-logo-img.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="202" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="174" height="50">
+          <img src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
       </a>
       <a class="main-header__logo-text logo-text" href="index.html" aria-current="page">
-        <img src="images/mobile-logo-text.svg" width="101" height="18" alt="Cat Energy">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -35,6 +45,11 @@
       <section class="hero">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__img" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Корм со вкусом курицы 500 грамм.">
+        </picture>
         <a class="hero__button button button--mobile" href="order-form.html">Подобрать программу</a>
       </section>
       <section class="meal-plan">
@@ -71,11 +86,26 @@
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example__stats stats">
-          <p class="stats__value"><b>5 кг</b> Снижение веса</p>
-          <p class="stats__value"><b>60 дней</b> Затрачено времени</p>
-          <p class="stats__price stats-price">Затраты на питание: <span class="stats-price__value">15 000 РУБ.</span></p>
+          <dl class="stats__value">
+            <dt>Снижение веса</dt>
+            <dd>5 кг</dd>
+            <dt>Затрачено времени</dt>
+            <dd>60 дней</dd>
+            <dt>Затраты на питание:</dt>
+            <dd>15 000 РУБ.</dd>
+          </dl>
         </div>
-        <button class="example__range-button" type="button"><span class="visually-hidden">До-после</span></button>
+        <div class="slider">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider-before@1x.png 1x, images/slider-before@2x.png 2x" width="560" height="512">
+            <img class="slider__image-before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до того как он похудел.">
+          </picture>
+          <button class="slider__range-button" type="button"><span class="visually-hidden">До-после</span></button>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider-after@1x.png 1x, images/slider-after@2x.png 2x" width="560" height="512">
+            <img class="slider__image-after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото похудевшего кота.">
+          </picture>
+        </div>
       </section>
       <section class="location">
         <h2 class="visually-hidden">Наше местоположение</h2>
@@ -83,14 +113,16 @@
           <p class="location__description">Приглашаем к сотрудничеству дилеров!</p>
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <div class="location__map">
-          тут будет карта
-        </div>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта нашего местоположения.">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo-text logo-text" href="index.html" aria-current="page">
-        <img src="images/footer-logo-text.svg" width="128" height="24" alt="Cat Energy">
+        <img src="images/logo-text.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">

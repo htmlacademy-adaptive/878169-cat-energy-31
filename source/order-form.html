@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <title>Подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/16.png">
+    <link rel="icon" href="favicons/32.png">
+    <link rel="icon" href="favicons/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo-image" href="index.html">
-        <img src="images/mobile-logo-img.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="202" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="174" height="50">
+          <img src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
       </a>
       <a class="main-header__logo-text logo-text" href="index.html">
-        <img src="images/mobile-logo-text.svg" width="101" height="18" alt="Cat Energy">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -105,14 +115,16 @@
           <p class="location__description">Приглашаем к сотрудничеству дилеров!</p>
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <div class="location__map">
-          тут будет карта
-        </div>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта нашего местоположения.">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo-text logo-text" href="index.html">
-        <img src="images/footer-logo-text.svg" width="128" height="24" alt="Cat Energy">
+        <img src="images/logo-text.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">
