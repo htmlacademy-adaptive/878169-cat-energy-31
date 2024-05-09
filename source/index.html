@@ -17,25 +17,29 @@
     <header class="main-header">
       <a class="main-header__logo-image" href="index.html" aria-current="page">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="202" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="174" height="50">
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50">
           <img src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
       </a>
       <a class="main-header__logo-text logo-text" href="index.html" aria-current="page">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-tablet-and-desktop.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet-and-desktop.svg" width="101" height="18">
+          <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a href="index.html" aria-current="page">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="order-form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="order-form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -50,7 +54,7 @@
           <source type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="709" height="609">
           <img class="hero__img" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Корм со вкусом курицы 500 грамм.">
         </picture>
-        <a class="hero__button button button--mobile" href="order-form.html">Подобрать программу</a>
+        <a class="hero__button button" href="order-form.html">Подобрать программу</a>
       </section>
       <section class="meal-plan">
         <h2 class="visually-hidden">Подберите подходящий план питания для своего кота</h2>
@@ -68,34 +72,31 @@
       <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list advantages-list">
-          <li class="advantages-list__item advantages-item">
-            <p class="advantages-item__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          <li class="advantages-list__item">
+            <p class="advantages-list__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages-list__item advantages-item">
-            <p class="advantages-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <li class="advantages-list__item">
+            <p class="advantages-list__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages-list__item advantages-item">
-            <p class="advantages-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <li class="advantages-list__item">
+            <p class="advantages-list__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages-list__item advantages-item">
-            <p class="advantages-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <li class="advantages-list__item">
+            <p class="advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stats stats">
-          <dl class="stats__value">
-            <dt>Снижение веса</dt>
-            <dd>5 кг</dd>
-            <dt>Затрачено времени</dt>
-            <dd>60 дней</dd>
-            <dt>Затраты на питание:</dt>
-            <dd>15 000 РУБ.</dd>
-          </dl>
-        </div>
-        <div class="slider">
+        <dl class="example__list">
+          <dt class="example__list-title">Снижение веса</dt>
+          <dd class="example__list-description">5 кг</dd>
+          <dt class="example__list-title">Затрачено времени</dt>
+          <dd class="example__list-description">60 дней</dd>
+        </dl>
+        <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
+        <div class="example__slider slider">
           <picture>
             <source type="image/png" media="(min-width: 768px)" srcset="images/slider-before@1x.png 1x, images/slider-before@2x.png 2x" width="560" height="512">
             <img class="slider__image-before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до того как он похудел.">
@@ -109,7 +110,7 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Наше местоположение</h2>
-        <div class="location__wrapper">
+        <div class="location__wrapper location__wrapper--light">
           <p class="location__description">Приглашаем к сотрудничеству дилеров!</p>
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
@@ -126,22 +127,22 @@
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>
-      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
         <p class="developer__text">HTML Academy</p>
       </a>
     </footer>

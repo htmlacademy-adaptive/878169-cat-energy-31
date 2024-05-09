@@ -17,25 +17,29 @@
     <header class="main-header">
       <a class="main-header__logo-image" href="index.html">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="202" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="174" height="50">
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50">
           <img src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
       </a>
       <a class="main-header__logo-text logo-text" href="index.html">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-tablet-and-desktop.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet-and-desktop.svg" width="101" height="18">
+          <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a href="order-form.html" aria-current="page">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="order-form.html" aria-current="page">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -82,7 +86,7 @@
           <fieldset class="form__form-section form-section">
             <legend class="form-section__title">Комментарий</legend>
             <label class="visually-hidden" for="form-text-input">Расскажите обо всех повадках кота</label>
-            <textarea class="form-section__form-text-input" name="form-text-input" id="form-text-input" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-section__form-input" name="form-text-input" id="form-text-input" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__form-section form-section">
             <legend class="visually-hidden">Дополнительно</legend>
@@ -128,22 +132,22 @@
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>
-      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
         <p class="developer__text">HTML Academy</p>
       </a>
     </footer>

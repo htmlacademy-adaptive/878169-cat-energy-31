@@ -1,0 +1,24 @@
+.location__wrapper {
+  background-color: $basic-grey;
+}
+
+.location__wrapper--light {
+  background-color: $white;
+}
+
+.location__description {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-black;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.location__map {
+  width: 100%;
+}

@@ -1,0 +1,42 @@
+.example {
+  background-color: $example-bg;
+}
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $black;
+  font-weight: 400;
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__list-title {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.example__list-description {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__price {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+}

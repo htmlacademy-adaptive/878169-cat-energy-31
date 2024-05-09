@@ -1,0 +1,21 @@
+.hero {
+  font-family: $secondary-font;
+  color: $white;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.hero__description {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.hero__img {
+  display: block;
+}

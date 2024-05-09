@@ -1,7 +1,25 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/meal-plan-card.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-list.scss";
+@import "./blocks/example.scss";
+@import "./blocks/location.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/main-product-card.scss";
+@import "./blocks/secondary-product.scss";
+@import "./blocks/secondary-product-card.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/meal-plan-form.scss";
+@import "./blocks/form.scss";
+@import "./blocks/form-section.scss";
