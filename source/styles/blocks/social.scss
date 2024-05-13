@@ -1,0 +1,18 @@
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $special-grey;
+}
+
+.social__link--vk {
+  mask-image: url("../../icons/stack.svg#vk-logo");
+}
+
+.social__link--yt {
+  mask-image: url("../../icons/stack.svg#yt-logo");
+}
+
+.social__link--tg {
+  mask-image: url("../../icons/stack.svg#tg-logo");
+}

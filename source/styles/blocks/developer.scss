@@ -1,0 +1,11 @@
+.developer {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 27px;
+    height: 34px;
+    background-color: $special-dark-grey;
+    mask-image: url("../../icons/stack.svg#html-academy-logo");
+  }
+}

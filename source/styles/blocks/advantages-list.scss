@@ -2,6 +2,47 @@
   list-style: none;
 }
 
+.advantages-list__item {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages-list__item--leaf {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
+}
+
+.advantages-list__item--cup {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-cup");
+    background-size: 26px 29px;
+  }
+}
+
+.advantages-list__item--eat {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-eat");
+    background-size: 25px 30px;
+  }
+}
+
+.advantages-list__item--clock {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-clock");
+    background-size: 26px 31px;
+  }
+}
+
 .advantages-list__description {
   font-size: 14px;
   line-height: 18px;

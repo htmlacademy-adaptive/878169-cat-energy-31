@@ -1,0 +1,18 @@
+.gift {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 290px, transparent 290px), image-set(url(../../images/secondary-product-background-mobile@1x.jpg) type("image/jpg"), url(../../images/secondary-product-background-mobile@2x.jpg) type("image/jpg") 2x, url(../../images/secondary-product-background-mobile@1x.webp) type("image/webp"), url(../../images/secondary-product-background-mobile@2x.webp) type("image/webp") 2x);
+  &::before {
+    position: absolute;
+    content: '';
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon-gift");;
+  }
+}
+
+.gift__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}
