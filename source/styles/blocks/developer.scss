@@ -1,8 +1,9 @@
 .developer {
   position: relative;
+
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 27px;
     height: 34px;
     background-color: $special-dark-grey;

@@ -1,7 +1,7 @@
 .hero {
   font-family: $secondary-font;
   color: $white;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 303px, transparent 302px), image-set(url(../../images/hero-background-mobile@1x.jpg) type("image/jpg"), url(../../images/hero-background-mobile@2x.jpg) type("image/jpg") 2x, url(../../images/hero-background-mobile@1x.webp) type("image/webp"), url(../../images/hero-background-mobile@2x.webp) type("image/webp") 2x);
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 303px, transparent 302px), image-set(url("../../images/hero-background-mobile@1x.jpg") type("image/jpg"), url("../../images/hero-background-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/hero-background-mobile@1x.webp") type("image/webp"), url("../../images/hero-background-mobile@2x.webp") type("image/webp") 2x);
   background-repeat: no-repeat;
   background-size: 100% 100%, 320px 302px;
   background-position: center top;
