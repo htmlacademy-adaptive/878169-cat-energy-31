@@ -1,9 +1,25 @@
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+
+  @media #{$tablet} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 37px 60px;
+  }
+
+  @media #{$desktop} {
+    column-gap: 80px;
+  }
 }
 
 .advantages-list__item {
   position: relative;
+  min-height: 60px;
 
   &::before {
     position: absolute;
@@ -14,6 +30,31 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media #{$tablet} {
+    min-height: 280px;
+    width: 250px;
+    padding-top: 38px;
+    counter-increment: advantagesList;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 42px;
+    }
+
+    &::after {
+      content: counter(advantagesList);
+      position: absolute;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      top: 3;
+      left: 114px;
+      z-index: -1;
+    }
+  }
 }
 
 .advantages-list__item--leaf {
@@ -21,12 +62,26 @@
     background-image: url("../../icons/stack.svg#icon-leaf");
     background-size: 30px 32px;
   }
+
+  @media #{$tablet} {
+    &::after {
+      top: 1px;
+      left: 118px;
+    }
+  }
 }
 
 .advantages-list__item--cup {
   &::before {
     background-image: url("../../icons/stack.svg#icon-cup");
     background-size: 26px 29px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      top: 3px;
+      left: 111px;
+    }
   }
 }
 
@@ -47,4 +102,15 @@
 .advantages-list__description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 80px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 115px;
+  }
 }

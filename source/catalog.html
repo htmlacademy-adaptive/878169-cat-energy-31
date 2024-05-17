@@ -11,38 +11,43 @@
     <link rel="icon" href="favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-image" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50">
-          <img src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-      </a>
-      <a class="main-header__logo-text logo-text" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-tablet-and-desktop.svg" width="118" height="21">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet-and-desktop.svg" width="101" height="18">
-          <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
-        </picture>
-      </a>
-      <nav class="main-header__nav main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="catalog.html" aria-current="page">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="order-form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="main-header__inner">
+          <a class="main-header__logo-image" href="index.html">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50">
+              <img src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <a class="main-header__logo-text logo-text" href="index.html">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-tablet-and-desktop.svg" width="118" height="21">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet-and-desktop.svg" width="101" height="18">
+              <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+            </picture>
+          </a>
+          <nav class="main-header__nav main-nav">
+            <button class="main-nav__toggle" aria-label="Меню" type="button">
+              <span></span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current" href="catalog.html" aria-current="page">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="order-form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="main-container catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
@@ -178,42 +183,48 @@
         </form>
       </section>
       <section class="location">
-        <h2 class="visually-hidden">Наше местоположение</h2>
-        <div class="location__wrapper">
-          <p class="location__description">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="container">
+          <h2 class="visually-hidden">Наше местоположение</h2>
+          <div class="location__wrapper">
+            <p class="location__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <address class="location__address">
+              <p class="location__address-description">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="location__address-description">Санкт-Петербург</p>
+            </address>
+          </div>
         </div>
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
-          <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта нашего местоположения.">
-        </picture>
+        <iframe class="location__map" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.11" width="560" height="400" style="position:relative;"></iframe>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo-text logo-text" href="index.html">
-        <img src="images/logo-text.svg" width="128" height="24" alt="Cat Energy">
-      </a>
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
-            <span class="visually-hidden">Вконтакте</span>
+      <div class="container">
+        <div class="main-footer__inner">
+          <a class="main-footer__logo-text logo-text" href="index.html">
+            <img src="images/logo-text.svg" width="128" height="24" alt="Cat Energy">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
-            <span class="visually-hidden">Ютуб</span>
+          <ul class="main-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
+          <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
+            <p class="developer__text">HTML Academy</p>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
-        <p class="developer__text">HTML Academy</p>
-      </a>
+        </div>
+      </div>
     </footer>
+    <script src="scripts/index.js" defer></script>
   </body>
 </html>

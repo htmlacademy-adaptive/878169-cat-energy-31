@@ -1,8 +1,36 @@
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media #{$tablet} {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $basic-grey-2;
+  }
+
+  @media #{$desktop} {
+    padding: 0;
+    padding-top: 71px;
+    border: none;
+  }
+}
+
 .advantages__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $black;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media #{$tablet} {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 30px;
+  }
 }

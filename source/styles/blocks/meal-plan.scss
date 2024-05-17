@@ -1,0 +1,35 @@
+.meal-plan {
+  padding-top: 20px;
+
+  @media #{$tablet} {
+    padding: 0;
+  }
+
+  @media #{$desktop} {
+    padding-top: 82px;
+  }
+}
+
+.meal-plan__list {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+
+  @media #{$tablet} {
+    gap: 30px;
+  }
+
+  @media #{$desktop} {
+    flex-flow: row wrap;
+    gap: 80px;
+  }
+}
+
+.meal-plan__card {
+  @media #{$desktop} {
+    max-width: 570px;
+  }
+}

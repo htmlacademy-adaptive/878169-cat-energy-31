@@ -1,5 +1,48 @@
 .main-footer {
   background-color: $basic-grey;
+  padding: 40px 0;
+
+  @media #{$tablet} {
+    padding: 55px 0;
+  }
+
+  @media #{$desktop} {
+    padding: 66px 0;
+  }
+}
+
+.main-footer__inner {
+  display: flex;
+  flex-flow: column wrap;
+
+  @media #{$tablet} {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__logo-text {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media #{$tablet} {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.main-footer__logo-text img {
+  display: block;
 }
 
 .main-footer__developer {

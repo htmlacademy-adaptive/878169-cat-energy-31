@@ -3,6 +3,7 @@
   font-family: $secondary-font;
   color: $black;
   background-color: $basic-grey;
+  padding: 15px 20px;
 
   &::before {
     content: "";
@@ -13,6 +14,30 @@
     border-radius: 50%;
     top: 24px;
     left: 21px;
+  }
+
+  @media #{$tablet} {
+    padding: 52px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 91px;
+      right: 63px;
+      left: auto;
+    }
+  }
+
+  @media #{$desktop} {
+    padding: 55px 52px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      right: auto;
+      left: 52px;
+    }
   }
 }
 
@@ -27,6 +52,26 @@
     top: 21px;
     left: 27px;
   }
+
+  @media #{$tablet} {
+    &::after {
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      left: auto;
+      right: 93px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+      right: auto;
+    }
+  }
 }
 
 .meal-plan-card--pro {
@@ -40,6 +85,26 @@
     top: 35px;
     left: 13px;
   }
+
+  @media #{$tablet} {
+    &::after {
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      left: auto;
+      right: 29px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      left: 33px;
+      right: auto;
+    }
+  }
 }
 
 .meal-plan-card__title {
@@ -47,6 +112,20 @@
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 70px;
+  margin-bottom: 29px;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 25px 300px 24px 1px;
+  }
+
+  @media #{$desktop} {
+    margin: 22px 0 73px 162px;
+  }
 }
 
 .meal-plan-card__description {
@@ -54,23 +133,62 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+  margin: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 23px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    border: none;
+    padding: 0;
+    margin-bottom: 48px;
+    margin-right: 260px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 23px;
+    margin-right: 8px;
+  }
 }
 
 .meal-plan-card__link {
-  position: relative;
+  display: block;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   text-decoration: none;
   color: $black;
   text-transform: uppercase;
+  padding: 4px 50px 4px 0;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.meal-plan-card__link span {
+  position: relative;
 
   &::after {
     content: "";
+    display: block;
     position: absolute;
     background-image: url("../../icons/stack.svg#arrow");
     background-repeat: no-repeat;
+    background-position: -8px;
     width: 32px;
     height: 10px;
+    top: 6px;
+    right: -50px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      top: 10px;
+      right: -61px;
+    }
   }
 }
