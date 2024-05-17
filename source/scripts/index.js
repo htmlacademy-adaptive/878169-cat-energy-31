@@ -27,29 +27,44 @@ document.addEventListener('DOMContentLoaded', () => {
     return value + '%';
   }
 
-  rangeButton.addEventListener('mousedown', (mousedownEvent) => {
-    mousedownEvent.preventDefault();
+  function moveSlider(position) {
+    const sliderRect = slider.getBoundingClientRect();
+    let newLeft = position - sliderRect.left;
+    newLeft = Math.max(0, newLeft);
+    newLeft = Math.min(newLeft, sliderRect.width);
+    const posPercentage = (newLeft / sliderRect.width) * 100;
+    sliderBefore.style.width = toPercentString(posPercentage);
+    rangeButton.style.left = toPercentString(posPercentage);
+  }
+
+  rangeButton.addEventListener('mousedown', (event) => {
+    event.preventDefault();
     isDragging = true;
+  });
 
-    const onMouseMove = (mousemoveEvent) => {
-      if (isDragging) {
-        const sliderRect = slider.getBoundingClientRect();
-        let newLeft = mousemoveEvent.clientX - sliderRect.left;
-        newLeft = Math.max(0, newLeft);
-        newLeft = Math.min(newLeft, sliderRect.width);
-        const posPercentage = (newLeft / sliderRect.width) * 100;
-        sliderBefore.style.width = toPercentString(posPercentage);
-        rangeButton.style.left = toPercentString(posPercentage);
-      }
-    };
+  rangeButton.addEventListener('touchstart', (event) => {
+    event.preventDefault();
+    isDragging = true;
+  });
 
-    const onMouseUp = () => {
-      isDragging = false;
-      document.removeEventListener('mousemove', onMouseMove);
-      document.removeEventListener('mouseup', onMouseUp);
-    };
+  document.addEventListener('mousemove', (event) => {
+    if (isDragging) {
+      moveSlider(event.clientX);
+    }
+  });
 
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp, { once: true });
+  document.addEventListener('touchmove', (event) => {
+    if (isDragging) {
+      event.preventDefault();
+      moveSlider(event.touches[0].clientX);
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  document.addEventListener('touchend', () => {
+    isDragging = false;
   });
 });
