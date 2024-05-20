@@ -3,7 +3,7 @@
   font-family: $secondary-font;
   color: $black;
   background-color: $basic-grey;
-  padding: 15px 20px;
+  padding: 15px 20px 18px;
 
   &::before {
     content: "";
@@ -13,16 +13,17 @@
     height: 50px;
     border-radius: 50%;
     top: 24px;
-    left: 21px;
+    left: 20px;
   }
 
   @media #{$tablet} {
     padding: 52px;
+    padding-bottom: 53px;
 
     &::before {
       width: 200px;
       height: 200px;
-      top: 91px;
+      top: 92px;
       right: 63px;
       left: auto;
     }
@@ -75,6 +76,10 @@
 }
 
 .meal-plan-card--pro {
+  &::before {
+    left: 21px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -83,16 +88,27 @@
     width: 67px;
     height: 28px;
     top: 35px;
-    left: 13px;
+    left: 12px;
   }
 
   @media #{$tablet} {
+    &::before {
+      left: auto;
+      top: 91px;
+    }
+
     &::after {
       width: 268px;
       height: 112px;
       top: 135px;
       left: auto;
       right: 29px;
+    }
+
+    @media #{$desktop} {
+      &::before {
+        top: 47px;
+      }
     }
   }
 
@@ -115,7 +131,7 @@
   margin: 0;
   margin-top: 15px;
   margin-left: 70px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   @media #{$tablet} {
     font-size: 36px;
@@ -136,7 +152,7 @@
   margin: 0;
   margin-bottom: 15px;
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   @media #{$tablet} {
     font-size: 16px;
@@ -163,9 +179,23 @@
   text-transform: uppercase;
   padding: 4px 50px 4px 0;
 
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    & span::after {
+      background-position: 0;
+    }
+  }
+
   @media #{$tablet} {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media #{$tablet} {
+    margin-left: 1px;
   }
 }
 
@@ -178,17 +208,18 @@
     position: absolute;
     background-image: url("../../icons/stack.svg#arrow");
     background-repeat: no-repeat;
-    background-position: -8px;
+    background-position: -6px;
     width: 32px;
     height: 10px;
-    top: 6px;
-    right: -50px;
+    top: 50%;
+    right: -49px;
+    transform: translateY(-50%);
+    transition: 0.2s ease-in-out;
   }
 
   @media #{$tablet} {
     &::after {
-      top: 10px;
-      right: -61px;
+      right: -58px;
     }
   }
 }

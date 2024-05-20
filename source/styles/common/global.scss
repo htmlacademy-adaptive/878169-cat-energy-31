@@ -16,11 +16,22 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
   background-color: $white;
+}
+
+.main-container {
+  flex: 1;
 }

@@ -3,20 +3,22 @@
   background-color: transparent;
 }
 
-@media #{$desktop} {
-  .main-header--index {
+.main-header--index {
+  @media #{$desktop} {
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    border: none;
+    height: 65px;
   }
 }
 
 .main-header__inner {
   display: flex;
   justify-content: space-between;
-  min-height: 64px;
+  min-height: 65px;
 
   @media #{$tablet} {
     justify-content: flex-start;
@@ -52,6 +54,7 @@
 
 .main-header__logo-text {
   padding: 23px 0;
+  margin-right: 10px;
 
   @media #{$tablet} {
     padding: 16px 0;

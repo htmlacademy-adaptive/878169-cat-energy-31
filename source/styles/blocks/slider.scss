@@ -12,7 +12,7 @@
   @media #{$desktop} {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 
   @media #{$desktop} {
-    background-image: linear-gradient(to top, #eaeaea 387px, transparent 387px);
+    background-image: linear-gradient(to top, #eaeaea 377px, transparent 377px);
   }
 }
 

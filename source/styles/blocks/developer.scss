@@ -24,6 +24,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media #{$desktop} {
+    &::after {
+      right: -1px;
+    }
+  }
 }
 
 .developer__text {

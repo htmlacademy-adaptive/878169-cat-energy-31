@@ -1,0 +1,36 @@
+.title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    z-index: -1;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media #{$tablet} {
+      top: 14px;
+    }
+
+    @media #{$desktop} {
+      top: calc(50% - 2px);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.title-wrapper--form {
+  &::before {
+    top: 16px;
+  }
+
+  @media #{$tablet} {
+    &::before {
+      top: 22px;
+      margin-left: -40px;
+    }
+  }
+}

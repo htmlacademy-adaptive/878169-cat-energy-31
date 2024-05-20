@@ -3,11 +3,11 @@
   padding: 40px 0;
 
   @media #{$tablet} {
-    padding: 55px 0;
+    padding: 63px 0;
   }
 
   @media #{$desktop} {
-    padding: 66px 0;
+    padding: 74px 0;
   }
 }
 
@@ -24,7 +24,7 @@
 .main-footer__logo-text {
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   &:hover,
   &:focus {
@@ -36,13 +36,24 @@
   }
 
   @media #{$tablet} {
-    margin: 0;
+    margin: -2px 0 0 1px;
     align-self: center;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    margin-top: -2px;
   }
 }
 
 .main-footer__logo-text img {
   display: block;
+}
+
+.main-footer__social {
+  @media #{$tablet} {
+    margin-left: 35px;
+  }
 }
 
 .main-footer__developer {

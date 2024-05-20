@@ -1,9 +1,37 @@
+.meal-plan-form {
+  border-top: 1px solid $social-border;
+  padding-top: 27px;
+  padding-bottom: 31px;
+
+  @media #{$tablet} {
+    border: none;
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 70px;
+    padding-bottom: 79px;
+  }
+}
+
 .meal-plan-form__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $black;
+  margin: 0;
+
+  @media #{$tablet} {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 40px;
+  }
+
+  @media #{$desktop} {
+    margin-left: 0;
+  }
 }
 
 .meal-plan-form__description {
@@ -11,4 +39,24 @@
   font-size: 14px;
   line-height: 18px;
   color: $black;
+  margin: 0;
+  margin-top: 37px;
+  margin-right: 50px;
+  text-transform: uppercase;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 40px;
+    margin-top: 55px;
+    max-width: 390px;
+  }
+
+  @media #{$desktop} {
+    margin-left: 0;
+  }
+}
+
+.meal-plan-form__form {
+  margin-top: 39px;
 }
