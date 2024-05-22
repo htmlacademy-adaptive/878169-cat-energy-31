@@ -13,6 +13,7 @@
   @media #{$desktop} {
     padding-top: 19px;
     padding-bottom: 75px;
+    background-image: linear-gradient(to top, $example-bg-2 462px, transparent 462px);
   }
 }
 
@@ -135,7 +136,7 @@
   }
 
   @media #{$desktop} {
-    background-color: $example-bg;
+    background-color: $example-bg-2;
   }
 }
 

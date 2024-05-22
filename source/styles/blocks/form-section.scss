@@ -116,6 +116,76 @@
   gap: 13px;
 }
 
+.form-section__form-label {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  width: max-content;
+  flex-shrink: 0;
+  text-transform: uppercase;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-section__form-label--btn {
+  &:hover {
+    & span {
+      border: 1px solid $grey;
+    }
+  }
+}
+
+.form-section__form-label--btn-disabled {
+  opacity: 0.3;
+}
+
+.form-section__form-input {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  width: 100%;
+  border: none;
+  outline: 1px solid $basic-grey-3;
+  padding: 14px 15px 13px;
+  text-transform: uppercase;
+  appearance: textfield;
+  height: 45px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:hover {
+    outline: 2px solid $special-grey-2;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:disabled {
+    outline: 2px solid $red;
+  }
+
+  @media #{$tablet} {
+    margin-right: 40px;
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
+
+  @media #{$desktop} {
+    margin-right: 0;
+  }
+}
+
 .form-section__inner--email {
   position: relative;
 
@@ -124,12 +194,24 @@
     content: "";
     width: 20px;
     height: 20px;
-    // mask-image: url(../icons/stack.svg#email-stroke);
+    mask-image: url("../../icons/stack.svg#email-stroke");
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
     background-color: $black;
+  }
+
+  &:has(.form-section__form-input:focus) {
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:has(.form-section__form-input:disabled) {
+    &::after {
+      background-color: $basic-red;
+    }
   }
 
   @media #{$tablet} {
@@ -158,12 +240,24 @@
     content: "";
     width: 20px;
     height: 20px;
-    // mask-image: url(../icons/stack.svg#phone-stroke);
+    mask-image: url("../../icons/stack.svg#phone-stroke");
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
     background-color: $black;
+  }
+
+  &:has(.form-section__form-input:focus) {
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:has(.form-section__form-input:disabled) {
+    &::after {
+      background-color: $basic-red;
+    }
   }
 
   @media #{$tablet} {
@@ -181,44 +275,6 @@
     &::after {
       right: 16px;
     }
-  }
-}
-
-.form-section__form-label {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  width: max-content;
-  flex-shrink: 0;
-  text-transform: uppercase;
-
-  @media #{$tablet} {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.form-section__form-input {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  width: 100%;
-  border: none;
-  outline: 1px solid $basic-grey-3;
-  padding: 14px 15px 13px;
-  text-transform: uppercase;
-
-  @media #{$tablet} {
-    margin-right: 40px;
-    padding: 11px 20px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  @media #{$desktop} {
-    margin-right: 0;
   }
 }
 
@@ -334,6 +390,14 @@
   padding: 14px;
   display: block;
 
+  &:hover {
+    outline: 2px solid $special-grey-2;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+  }
+
   @media #{$tablet} {
     margin-top: 87px;
     text-align: start;
@@ -348,6 +412,18 @@
     margin-top: 77px;
     padding-top: 8px;
     width: 100%;
+  }
+}
+
+.form-section__form-input-textarea--error {
+  outline: 2px solid $red;
+
+  &:hover {
+    outline: 2px solid $red;
+  }
+
+  &:focus {
+    outline: 2px solid $red;
   }
 }
 

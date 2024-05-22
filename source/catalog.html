@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <div class="container">
         <div class="main-header__inner">
           <a class="main-header__logo-image" href="index.html" tabindex="-1">
@@ -53,13 +53,16 @@
       <div class="container">
         <h1 class="catalog__title">Каталог продукции</h1>
       </div>
-      <section class="main-product">
+      <section class="main-product" data-test="catalog">
         <div class="container">
           <h2 class="visually-hidden">Основные товары</h2>
           <ul class="main-product__list">
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-1-desktop@1x.webp 1x, images/catalog-1-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.webp 1x, images/catalog-1-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-1-mobile@1x.webp 1x, images/catalog-1-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-1-desktop@1x.png 1x, images/catalog-1-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x" width="200" height="210">
                   <img src="images/catalog-1-mobile@1x.png" srcset="images/catalog-1-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом курицы 500 грамм.">
@@ -89,9 +92,12 @@
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-2-desktop@1x.webp 1x, images/catalog-2-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.webp 1x, images/catalog-2-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-2-mobile@1x.webp 1x, images/catalog-2-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-2-desktop@1x.png 1x, images/catalog-2-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.png 1x, images/catalog-2-tablet@2x.png 2x" width="200" height="210">
-                  <img class="main-product-card__image" src="images/catalog-2-mobile@1x.png" srcset="images/catalog-2-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом курицы 1000 грамм.">
+                  <img src="images/catalog-2-mobile@1x.png" srcset="images/catalog-2-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом курицы 1000 грамм.">
                 </picture>
               </a>
               <div class="main-product-card__inner">
@@ -118,9 +124,12 @@
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-3-desktop@1x.webp 1x, images/catalog-3-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.webp 1x, images/catalog-3-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-3-mobile@1x.webp 1x, images/catalog-3-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-3-desktop@1x.png 1x, images/catalog-3-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x" width="200" height="210">
-                  <img class="main-product-card__image" src="images/catalog-3-mobile@1x.png" srcset="images/catalog-3-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом рыбы 500 грамм.">
+                  <img src="images/catalog-3-mobile@1x.png" srcset="images/catalog-3-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом рыбы 500 грамм.">
                 </picture>
               </a>
               <div class="main-product-card__inner">
@@ -147,9 +156,12 @@
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-4-desktop@1x.webp 1x, images/catalog-4-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.webp 1x, images/catalog-4-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-4-mobile@1x.webp 1x, images/catalog-4-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-4-desktop@1x.png 1x, images/catalog-4-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.png 1x, images/catalog-4-tablet@2x.png 2x" width="200" height="210">
-                  <img class="main-product-card__image" src="images/catalog-4-mobile@1x.png" srcset="images/catalog-4-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом рыбы 1000 грамм.">
+                  <img src="images/catalog-4-mobile@1x.png" srcset="images/catalog-4-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом рыбы 1000 грамм.">
                 </picture>
               </a>
               <div class="main-product-card__inner">
@@ -176,9 +188,12 @@
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-5-desktop@1x.webp 1x, images/catalog-5-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.webp 1x, images/catalog-5-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-5-mobile@1x.webp 1x, images/catalog-5-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-5-desktop@1x.png 1x, images/catalog-5-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x" width="200" height="210">
-                  <img class="main-product-card__image" src="images/catalog-5-mobile@1x.png" srcset="images/catalog-5-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом гречки 500 грамм.">
+                  <img src="images/catalog-5-mobile@1x.png" srcset="images/catalog-5-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом гречки 500 грамм.">
                 </picture>
               </a>
               <div class="main-product-card__inner">
@@ -205,9 +220,12 @@
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-6-desktop@1x.webp 1x, images/catalog-6-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.webp 1x, images/catalog-6-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-6-mobile@1x.webp 1x, images/catalog-6-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-6-desktop@1x.png 1x, images/catalog-6-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.png 1x, images/catalog-6-tablet@2x.png 2x" width="200" height="210">
-                  <img class="main-product-card__image" src="images/catalog-6-mobile@1x.png" srcset="images/catalog-6-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом гречки 1000 грамм.">
+                  <img src="images/catalog-6-mobile@1x.png" srcset="images/catalog-6-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом гречки 1000 грамм.">
                 </picture>
               </a>
               <div class="main-product-card__inner">
@@ -234,9 +252,12 @@
             <li class="main-product__card main-product-card">
               <a class="main-product-card__image" href="#" tabindex="-1">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-7-desktop@1x.webp 1x, images/catalog-7-desktop@2x.webp 2x" width="169" height="210">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-7-tablet@1x.webp 1x, images/catalog-7-tablet@2x.webp 2x" width="200" height="210">
+                  <source type="image/webp" srcset="images/catalog-7-mobile@1x.webp 1x, images/catalog-7-mobile@2x.webp 2x" width="140" height="107">
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-7-desktop@1x.png 1x, images/catalog-7-desktop@2x.png 2x" width="169" height="210">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x" width="200" height="210">
-                  <img class="main-product-card__image" src="images/catalog-7-mobile@1x.png" srcset="images/catalog-7-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом риса 500 грамм.">
+                  <img src="images/catalog-7-mobile@1x.png" srcset="images/catalog-7-mobile@2x.png 2x" width="140" height="107" alt="Корм со вкусом риса 500 грамм.">
                 </picture>
               </a>
               <div class="main-product-card__inner">
@@ -272,7 +293,7 @@
           </ul>
         </div>
       </section>
-      <section class="secondary-product">
+      <section class="secondary-product" data-test="additional">
         <div class="title-wrapper">
           <div class="container">
             <h2 class="secondary-product__title">Дополнительные товары</h2>
@@ -335,7 +356,7 @@
           </form>
         </div>
       </section>
-      <section class="location">
+      <section class="location" data-test="contacts">
         <div class="container">
           <h2 class="visually-hidden">Наше местоположение</h2>
           <div class="location__wrapper">
@@ -349,7 +370,7 @@
         <iframe class="location__map" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.11" width="560" height="400" style="position:relative;"></iframe>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="container">
         <div class="main-footer__inner">
           <a class="main-footer__logo-text logo-text" href="index.html">

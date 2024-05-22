@@ -82,19 +82,19 @@
   width: 100%;
   display: block;
   border: none;
-  background-image: image-set(url("../../images/map-mobile@1x.png") type("image/png"), url("../../images/map-mobile@2x.png") type("image/png") 2x);
+  background-image: image-set(url("../../images/map-mobile@1x.webp") type("image/webp"), url("../../images/map-mobile@2x.webp") type("image/webp") 2x, url("../../images/map-mobile@1x.png") type("image/png"), url("../../images/map-mobile@2x.png") type("image/png") 2x);
   background-repeat: no-repeat;
   height: 362px;
   background-size: 100% 100%;
 
   @media #{$tablet} {
-    background-image: image-set(url("../../images/map-tablet@1x.png") type("image/png"), url("../../images/map-tablet@2x.png") type("image/png") 2x);
+    background-image: image-set(url("../../images/map-tablet@1x.webp") type("image/webp"), url("../../images/map-tablet@2x.webp") type("image/webp") 2x, url("../../images/map-tablet@1x.png") type("image/png"), url("../../images/map-tablet@2x.png") type("image/png") 2x);
     height: 400px;
     margin-top: 1px;
   }
 
   @media #{$desktop} {
     margin: 0;
-    background-image: image-set(url("../../images/map-desktop@1x.png") type("image/png"), url("../../images/map-desktop@2x.png") type("image/png") 2x);
+    background-image: image-set(url("../../images/map-desktop@1x.webp") type("image/webp"), url("../../images/map-desktop@2x.webp") type("image/webp") 2x, url("../../images/map-desktop@1x.png") type("image/png"), url("../../images/map-desktop@2x.png") type("image/png") 2x);
   }
 }

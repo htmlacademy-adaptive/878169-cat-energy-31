@@ -1,8 +1,8 @@
 .gift {
   position: relative;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 290px, transparent 290px), image-set(url("../../images/secondary-product-background-mobile@1x.jpg") type("image/jpg"), url("../../images/secondary-product-background-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/secondary-product-background-mobile@1x.webp") type("image/webp"), url("../../images/secondary-product-background-mobile@2x.webp") type("image/webp") 2x);
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 290px, transparent 290px), image-set(url("../../images/secondary-product-background-mobile@1x.webp") type("image/webp"), url("../../images/secondary-product-background-mobile@2x.webp") type("image/webp") 2x, url("../../images/secondary-product-background-mobile@1x.jpg") type("image/jpg"), url("../../images/secondary-product-background-mobile@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
-  background-size: cover, 100% 100%;
+  background-size: 100% 100%, cover;
   background-position: center;
 
   &::before {
@@ -17,7 +17,7 @@
   }
 
   @media #{$tablet} {
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 200px, transparent 200px), image-set(url("../../images/secondary-product-background-tablet@1x.jpg") type("image/jpg"), url("../../images/secondary-product-background-tablet@2x.jpg") type("image/jpg") 2x, url("../../images/secondary-product-background-tablet@1x.webp") type("image/webp"), url("../../images/secondary-product-background-tablet@2x.webp") type("image/webp") 2x);
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 200px, transparent 200px), image-set(url("../../images/secondary-product-background-tablet@1x.webp") type("image/webp"), url("../../images/secondary-product-background-tablet@2x.webp") type("image/webp") 2x, url("../../images/secondary-product-background-tablet@1x.jpg") type("image/jpg"), url("../../images/secondary-product-background-tablet@2x.jpg") type("image/jpg") 2x);
     margin-left: 1px;
 
     &::before {
@@ -30,7 +30,7 @@
   }
 
   @media #{$desktop} {
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 288px, transparent 288px), image-set(url("../../images/secondary-product-background-desktop@1x.jpg") type("image/jpg"), url("../../images/secondary-product-background-desktop@2x.jpg") type("image/jpg") 2x, url("../../images/secondary-product-background-desktop@1x.webp") type("image/webp"), url("../../images/secondary-product-background-desktop@2x.webp") type("image/webp") 2x);
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 288px, transparent 288px), image-set(url("../../images/secondary-product-background-desktop@1x.webp") type("image/webp"), url("../../images/secondary-product-background-desktop@2x.webp") type("image/webp") 2x, url("../../images/secondary-product-background-desktop@1x.jpg") type("image/jpg"), url("../../images/secondary-product-background-desktop@2x.jpg") type("image/jpg") 2x);
     background-size: 245px 288px, 100% 100%;
     background-position: top;
     margin-top: 0;

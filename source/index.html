@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="main-header main-header--index">
+    <header class="main-header main-header--index" data-test="header">
       <div class="container">
         <div class="main-header__inner">
           <a class="main-header__logo-image" href="index.html" aria-current="page" tabindex="-1">
@@ -51,12 +51,15 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Магазин диетического питания для котов и кошек "Cat Energy"</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <div class="container">
           <div class="hero__inner">
             <h2 class="hero__title">Функциональное питание для котов</h2>
             <p class="hero__description">Занялся собой? Займись котом!</p>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.webp 1x, images/hero-image-desktop@2x.webp 2x" width="552" height="499">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="709" height="609">
+              <source type="image/webp" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x" width="280" height="270">
               <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x" width="552" height="499">
               <source type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="709" height="609">
               <img class="hero__img" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Корм со вкусом курицы 500 грамм.">
@@ -65,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="meal-plan">
+      <section class="meal-plan" data-test="programs">
         <div class="container">
           <h2 class="visually-hidden">Подберите подходящий план питания для своего кота</h2>
           <ul class="meal-plan__list">
@@ -86,7 +89,7 @@
           </ul>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="features">
         <div class="container">
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list advantages-list">
@@ -100,12 +103,12 @@
               <p class="advantages-list__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="advantages-list__item advantages-list__item--clock">
-              <p class="advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="example">
+      <section class="example" data-test="proof">
         <div class="container">
           <div class="example__wrapper">
             <h2 class="example__title">Живой пример</h2>
@@ -125,11 +128,15 @@
             </div>
             <div class="example__slider slider">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-after@1x.webp 1x, images/slider-after@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/slider-after-mobile@1x.webp 1x, images/slider-after-mobile@2x.webp 2x" width="280" height="256">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/slider-after@1x.png 1x, images/slider-after@2x.png 2x" width="560" height="512">
                 <img class="slider__image slider__image-after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото похудевшего кота.">
               </picture>
               <div class="slider__before" style="width: 50%;">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-before@1x.webp 1x, images/slider-before@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/slider-before-mobile@1x.webp 1x, images/slider-before-mobile@2x.webp 2x" width="280" height="256">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/slider-before@1x.png 1x, images/slider-before@2x.png 2x" width="560" height="512">
                   <img class="slider__image slider__image-before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до того как он похудел.">
                 </picture>
@@ -139,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="location location--light">
+      <section class="location location--light" data-test="contacts">
         <div class="container">
           <h2 class="visually-hidden">Наше местоположение</h2>
           <div class="location__wrapper">
@@ -153,7 +160,7 @@
         <iframe class="location__map" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.11" width="560" height="400" style="position:relative;"></iframe>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="container">
         <div class="main-footer__inner">
           <a class="main-footer__logo-text logo-text" href="index.html" aria-current="page">

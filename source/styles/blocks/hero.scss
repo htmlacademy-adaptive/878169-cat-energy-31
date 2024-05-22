@@ -1,7 +1,7 @@
 .hero {
   font-family: $secondary-font;
   color: $white;
-  background-image: image-set(url("../../images/hero-background-mobile@1x.jpg") type("image/jpg"), url("../../images/hero-background-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/hero-background-mobile@1x.webp") type("image/webp"), url("../../images/hero-background-mobile@2x.webp") type("image/webp") 2x), linear-gradient(to bottom, #62a63a 302px, transparent 302px);
+  background-image: image-set(url("../../images/hero-background-mobile@1x.webp") type("image/webp"), url("../../images/hero-background-mobile@2x.webp") type("image/webp") 2x, url("../../images/hero-background-mobile@1x.jpg") type("image/jpg"), url("../../images/hero-background-mobile@2x.jpg") type("image/jpg") 2x), linear-gradient(to bottom, #62a63a 302px, transparent 302px);
   background-repeat: no-repeat;
   background-size: 320px 302px, 100% 100%;
   background-position: center top;
@@ -15,7 +15,7 @@
   }
 
   @media #{$desktop} {
-    background-image: image-set(url("../../images/hero-background-desktop@1x.jpg") type("image/jpg"), url("../../images/hero-background-desktop@2x.jpg") type("image/jpg") 2x, url("../../images/hero-background-desktop@1x.webp") type("image/webp"), url("../../images/hero-background-desktop@2x.webp") type("image/webp") 2x), linear-gradient(to left, #62a63a 50%, transparent 50%);
+    background-image: image-set(url("../../images/hero-background-desktop@1x.webp") type("image/webp"), url("../../images/hero-background-desktop@2x.webp") type("image/webp") 2x, url("../../images/hero-background-desktop@1x.jpg") type("image/jpg"), url("../../images/hero-background-desktop@2x.jpg") type("image/jpg") 2x), linear-gradient(to left, #62a63a 50%, transparent 50%);
     background-size: 1041px 694px, 100% 100%;
     background-position: top left calc(50% + 521px), center;
     min-height: 694px;

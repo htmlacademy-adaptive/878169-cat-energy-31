@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <div class="container">
         <div class="main-header__inner">
           <a class="main-header__logo-image" href="index.html" tabindex="-1">
@@ -80,19 +80,25 @@
                 <legend class="visually-hidden">Цель</legend>
                 <ul class="form-section__list">
                   <li class="form-section__item">
-                    <input class="form-section__control-input visually-hidden" type="radio" name="target" value="weight-loss" id="weight-loss" checked>
-                    <span class="form-section__mark-radio"></span>
-                    <label class="form-section__form-label" for="weight-loss">Похудение</label>
+                    <label class="form-section__form-label form-section__form-label--btn" for="weight-loss">
+                      <input class="form-section__control-input visually-hidden" type="radio" name="target" value="weight-loss" id="weight-loss" checked>
+                      <span class="form-section__mark-radio"></span>
+                      Похудение
+                    </label>
                   </li>
                   <li class="form-section__item">
-                    <input class="form-section__control-input visually-hidden" type="radio" name="target" value="weight-gain" id="weight-gain">
-                    <span class="form-section__mark-radio"></span>
-                    <label class="form-section__form-label" for="weight-gain">Набор массы</label>
+                    <label class="form-section__form-label form-section__form-label--btn" for="weight-gain">
+                      <input class="form-section__control-input visually-hidden" type="radio" name="target" value="weight-gain" id="weight-gain">
+                      <span class="form-section__mark-radio"></span>
+                      Набор массы
+                    </label>
                   </li>
                   <li class="form-section__item">
-                    <input class="form-section__control-input visually-hidden" type="radio" name="target" value="need-advice" id="need-advice">
-                    <span class="form-section__mark-radio"></span>
-                    <label class="form-section__form-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+                    <label class="form-section__form-label form-section__form-label--btn" for="need-advice">
+                      <input class="form-section__control-input visually-hidden" type="radio" name="target" value="need-advice" id="need-advice">
+                      <span class="form-section__mark-radio"></span>
+                      Не знаю (Нужен ваш совет)
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -140,24 +146,32 @@
             <div class="container">
               <ul class="form-section__list form-section__list--more">
                 <li class="form-section__item form-section__item--more">
-                  <input class="form-section__control-input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
-                  <span class="form-section__mark-checkbox"></span>
-                  <label class="form-section__form-label" for="sweetener">Сахарозаменитель</label>
+                  <label class="form-section__form-label form-section__form-label--btn" for="sweetener">
+                    <input class="form-section__control-input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                    <span class="form-section__mark-checkbox"></span>
+                    Сахарозаменитель
+                  </label>
                 </li>
                 <li class="form-section__item form-section__item--more">
-                  <input class="form-section__control-input visually-hidden" type="checkbox" name="water" id="water">
-                  <span class="form-section__mark-checkbox"></span>
-                  <label class="form-section__form-label" for="water">Питьевая вода</label>
+                  <label class="form-section__form-label form-section__form-label--btn" for="water">
+                    <input class="form-section__control-input visually-hidden" type="checkbox" name="water" id="water">
+                    <span class="form-section__mark-checkbox"></span>
+                    Питьевая вода
+                  </label>
                 </li>
                 <li class="form-section__item form-section__item--more">
-                  <input class="form-section__control-input visually-hidden" type="checkbox" name="milk" id="milk">
-                  <span class="form-section__mark-checkbox"></span>
-                  <label class="form-section__form-label" for="milk">Молоко</label>
+                  <label class="form-section__form-label form-section__form-label--btn" for="milk">
+                    <input class="form-section__control-input visually-hidden" type="checkbox" name="milk" id="milk">
+                    <span class="form-section__mark-checkbox"></span>
+                    Молоко
+                  </label>
                 </li>
                 <li class="form-section__item form-section__item--more">
-                  <input class="form-section__control-input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                  <span class="form-section__mark-checkbox"></span>
-                  <label class="form-section__form-label" for="vitamins">Витамины</label>
+                  <label class="form-section__form-label form-section__form-label--btn" for="vitamins">
+                    <input class="form-section__control-input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                    <span class="form-section__mark-checkbox"></span>
+                    Витамины
+                  </label>
                 </li>
               </ul>
             </div>
@@ -170,7 +184,7 @@
           </div>
         </form>
       </section>
-      <section class="location">
+      <section class="location" data-test="contacts">
         <div class="container">
           <h2 class="visually-hidden">Наше местоположение</h2>
           <div class="location__wrapper">
@@ -184,7 +198,7 @@
         <iframe class="location__map" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.11" width="560" height="400" style="position:relative;"></iframe>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="container">
         <div class="main-footer__inner">
           <a class="main-footer__logo-text logo-text" href="index.html">

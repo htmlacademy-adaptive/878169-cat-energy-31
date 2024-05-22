@@ -41,7 +41,7 @@
   }
 
   @media #{$desktop} {
-    background-image: linear-gradient(to top, #eaeaea 377px, transparent 377px);
+    background-image: linear-gradient(to top, $example-bg-2 377px, transparent 377px);
   }
 }
 
