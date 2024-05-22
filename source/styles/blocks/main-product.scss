@@ -1,0 +1,27 @@
+.main-product {
+  border-top: 1px solid $social-border-2;
+
+  @media #{$tablet} {
+    border: none;
+  }
+}
+
+.main-product__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  column-gap: 20px;
+
+  @media #{$tablet} {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 60px;
+  }
+
+  @media #{$desktop} {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 63px 80px;
+    margin-bottom: 71px;
+  }
+}

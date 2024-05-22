@@ -1,0 +1,41 @@
+.developer {
+  position: relative;
+  display: block;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    background-color: $special-grey;
+    mask-image: url("../../icons/stack.svg#html-academy-logo");
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media #{$desktop} {
+    &::after {
+      right: -1px;
+    }
+  }
+}
+
+.developer__text {
+  margin: 0;
+
+  @media #{$tablet} {
+    padding-right: 50px;
+  }
+}

@@ -1,0 +1,100 @@
+.location {
+  background-color: $basic-grey;
+
+  @media #{$desktop} {
+    position: relative;
+  }
+}
+
+.location--light {
+  background-color: $white;
+}
+
+.location__wrapper {
+  display: flex;
+  padding: 26px 0;
+  justify-content: space-between;
+
+  @media #{$tablet} {
+    padding: 60px 40px;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    z-index: 2;
+    padding: 60px 70px 60px 80px;
+    top: 95px;
+    width: 565px;
+    background-color: $white;
+  }
+}
+
+.location__description {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-black;
+  text-transform: uppercase;
+  margin: 0;
+  width: 140px;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 26px;
+    width: 165px;
+  }
+
+  @media #{$desktop} {
+    margin-top: 1px;
+  }
+}
+
+.location__address {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  width: 140px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 165px;
+  }
+
+  @media #{$desktop} {
+    text-align: start;
+  }
+}
+
+.location__address-description {
+  margin: 0;
+
+  @media #{$tablet} {
+    &:not(:last-child) {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.location__map {
+  width: 100%;
+  display: block;
+  border: none;
+  background-image: image-set(url("../../images/map-mobile@1x.webp") type("image/webp"), url("../../images/map-mobile@2x.webp") type("image/webp") 2x, url("../../images/map-mobile@1x.png") type("image/png"), url("../../images/map-mobile@2x.png") type("image/png") 2x);
+  background-repeat: no-repeat;
+  height: 362px;
+  background-size: 100% 100%;
+
+  @media #{$tablet} {
+    background-image: image-set(url("../../images/map-tablet@1x.webp") type("image/webp"), url("../../images/map-tablet@2x.webp") type("image/webp") 2x, url("../../images/map-tablet@1x.png") type("image/png"), url("../../images/map-tablet@2x.png") type("image/png") 2x);
+    height: 400px;
+    margin-top: 1px;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    background-image: image-set(url("../../images/map-desktop@1x.webp") type("image/webp"), url("../../images/map-desktop@2x.webp") type("image/webp") 2x, url("../../images/map-desktop@1x.png") type("image/png"), url("../../images/map-desktop@2x.png") type("image/png") 2x);
+  }
+}

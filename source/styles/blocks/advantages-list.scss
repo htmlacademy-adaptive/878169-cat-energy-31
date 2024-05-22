@@ -1,0 +1,167 @@
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+
+  @media #{$tablet} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 37px 60px;
+  }
+
+  @media #{$desktop} {
+    column-gap: 80px;
+  }
+}
+
+.advantages-list__item {
+  position: relative;
+  min-height: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media #{$tablet} {
+    min-height: 280px;
+    width: 250px;
+    padding-top: 38px;
+    counter-increment: advantagesList;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+
+    &::after {
+      content: counter(advantagesList);
+      position: absolute;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      top: 3;
+      left: 114px;
+      z-index: -1;
+    }
+  }
+
+  @media #{$desktop} {
+    &::before {
+      top: 42px;
+    }
+  }
+}
+
+.advantages-list__item--leaf {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      top: 0;
+      left: 118px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      left: 119px;
+      top: 3px;
+    }
+  }
+}
+
+.advantages-list__item--cup {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-cup");
+    background-size: 26px 29px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      top: 1px;
+      left: 111px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      top: 3px;
+    }
+  }
+}
+
+.advantages-list__item--eat {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-eat");
+    background-size: 25px 30px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      top: 1px;
+      left: 113px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      left: 114px;
+      top: 3px;
+    }
+  }
+}
+
+.advantages-list__item--clock {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-clock");
+    background-size: 26px 31px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      top: 1px;
+      left: 113px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      left: 114px;
+      top: 3px;
+    }
+  }
+}
+
+.advantages-list__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 80px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 113px;
+  }
+
+  @media #{$desktop} {
+    margin-top: 115px;
+  }
+}

@@ -1,0 +1,225 @@
+.meal-plan-card {
+  position: relative;
+  font-family: $secondary-font;
+  color: $black;
+  background-color: $basic-grey;
+  padding: 15px 20px 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 24px;
+    left: 20px;
+  }
+
+  @media #{$tablet} {
+    padding: 52px;
+    padding-bottom: 53px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      right: 63px;
+      left: auto;
+    }
+  }
+
+  @media #{$desktop} {
+    padding: 55px 52px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      right: auto;
+      left: 52px;
+    }
+  }
+}
+
+.meal-plan-card--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 50px;
+    top: 21px;
+    left: 27px;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      left: auto;
+      right: 93px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+      right: auto;
+    }
+  }
+}
+
+.meal-plan-card--pro {
+  &::before {
+    left: 21px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+    top: 35px;
+    left: 12px;
+  }
+
+  @media #{$tablet} {
+    &::before {
+      left: auto;
+      top: 91px;
+    }
+
+    &::after {
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      left: auto;
+      right: 29px;
+    }
+
+    @media #{$desktop} {
+      &::before {
+        top: 47px;
+      }
+    }
+  }
+
+  @media #{$desktop} {
+    &::after {
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      left: 33px;
+      right: auto;
+    }
+  }
+}
+
+.meal-plan-card__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 25px 300px 24px 1px;
+  }
+
+  @media #{$desktop} {
+    margin: 22px 0 73px 162px;
+  }
+}
+
+.meal-plan-card__description {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  margin: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 21px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    border: none;
+    padding: 0;
+    margin-bottom: 48px;
+    margin-right: 260px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 23px;
+    margin-right: 8px;
+  }
+}
+
+.meal-plan-card__link {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $black;
+  text-transform: uppercase;
+  padding: 4px 50px 4px 0;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    & span::after {
+      background-position: 0;
+    }
+  }
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media #{$tablet} {
+    margin-left: 1px;
+  }
+}
+
+.meal-plan-card__link span {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../icons/stack.svg#arrow");
+    background-repeat: no-repeat;
+    background-position: -8px;
+    width: 32px;
+    height: 12px;
+    top: 50%;
+    right: -49px;
+    transform: translateY(-50%);
+    transition: 0.2s ease-in-out;
+  }
+
+  @media #{$tablet} {
+    &::after {
+      right: -58px;
+    }
+  }
+}
