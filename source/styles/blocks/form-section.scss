@@ -210,7 +210,7 @@
 
   &:has(.form-section__form-input:disabled) {
     &::after {
-      background-color: $basic-red;
+      background-color: $red;
     }
   }
 
@@ -256,7 +256,7 @@
 
   &:has(.form-section__form-input:disabled) {
     &::after {
-      background-color: $basic-red;
+      background-color: $red;
     }
   }
 
