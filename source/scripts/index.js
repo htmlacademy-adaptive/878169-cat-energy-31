@@ -1,4 +1,6 @@
 /* в этот файл добавляет скрипты*/
+document.querySelector('.main-nav__toggle').classList.remove('main-nav__toggle--no-js');
+document.querySelector('.location__map').classList.remove('location__map--no-js');
 
 /* Открытие-закрытие меню навигации*/
 document.addEventListener('DOMContentLoaded', () => {

@@ -11,6 +11,8 @@
     <link rel="icon" href="favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header" data-test="header">
@@ -31,10 +33,10 @@
             </picture>
           </a>
           <nav class="main-header__nav main-nav">
-            <button class="main-nav__toggle" aria-label="Меню" type="button">
+            <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--no-js" aria-label="Меню" type="button">
               <span></span>
             </button>
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__list--open">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
@@ -195,7 +197,9 @@
             </address>
           </div>
         </div>
-        <iframe class="location__map" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.11" width="560" height="400" style="position:relative;"></iframe>
+        <div class="location__map-wrapper">
+          <iframe class="location__map location__map--no-js" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.11" width="560" height="400" style="position:relative;"></iframe>
+        </div>
       </section>
     </main>
     <footer class="main-footer" data-test="footer">

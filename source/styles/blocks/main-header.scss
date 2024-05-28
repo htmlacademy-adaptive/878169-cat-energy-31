@@ -5,13 +5,10 @@
 
 .main-header--index {
   @media #{$desktop} {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     border: none;
     height: 65px;
+    margin-bottom: -65px;
+    z-index: 1;
   }
 }
 

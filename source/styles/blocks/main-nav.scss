@@ -20,6 +20,11 @@
   }
 }
 
+.main-nav__toggle--no-js {
+  opacity: 0;
+  cursor: default;
+}
+
 .main-nav__toggle span {
   content: "";
   width: 100%;
