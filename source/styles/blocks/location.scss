@@ -78,10 +78,7 @@
   }
 }
 
-.location__map {
-  width: 100%;
-  display: block;
-  border: none;
+.location__map-wrapper {
   background-image: image-set(url("../../images/map-mobile@1x.webp") type("image/webp"), url("../../images/map-mobile@2x.webp") type("image/webp") 2x, url("../../images/map-mobile@1x.png") type("image/png"), url("../../images/map-mobile@2x.png") type("image/png") 2x);
   background-repeat: no-repeat;
   height: 362px;
@@ -90,11 +87,28 @@
   @media #{$tablet} {
     background-image: image-set(url("../../images/map-tablet@1x.webp") type("image/webp"), url("../../images/map-tablet@2x.webp") type("image/webp") 2x, url("../../images/map-tablet@1x.png") type("image/png"), url("../../images/map-tablet@2x.png") type("image/png") 2x);
     height: 400px;
-    margin-top: 1px;
+  }
+
+  @media #{$desktop} {
+    background-image: image-set(url("../../images/map-desktop@1x.webp") type("image/webp"), url("../../images/map-desktop@2x.webp") type("image/webp") 2x, url("../../images/map-desktop@1x.png") type("image/png"), url("../../images/map-desktop@2x.png") type("image/png") 2x);
+  }
+}
+
+.location__map {
+  width: 100%;
+  display: block;
+  border: none;
+  height: 362px;
+
+  @media #{$tablet} {
+    height: 400px;
   }
 
   @media #{$desktop} {
     margin: 0;
-    background-image: image-set(url("../../images/map-desktop@1x.webp") type("image/webp"), url("../../images/map-desktop@2x.webp") type("image/webp") 2x, url("../../images/map-desktop@1x.png") type("image/png"), url("../../images/map-desktop@2x.png") type("image/png") 2x);
   }
+}
+
+.location__map--no-js {
+  display: none;
 }
