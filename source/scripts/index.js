@@ -1,6 +1,11 @@
 /* в этот файл добавляет скрипты*/
 document.querySelector('.main-nav__toggle').classList.remove('main-nav__toggle--no-js');
 document.querySelector('.location__map').classList.remove('location__map--no-js');
+document.querySelector('.main-nav__list').classList.remove('main-nav__list--no-js');
+document.querySelector('.main-header__nav').classList.remove('main-header__nav--no-js');
+document.querySelector('.main-header__inner').classList.remove('main-header__inner--no-js');
+document.querySelector('.main-header__logo-image').classList.remove('main-header__logo-image--no-js');
+document.querySelector('.main-header__logo-text').classList.remove('main-header__logo-text--no-js');
 
 /* Открытие-закрытие меню навигации*/
 document.addEventListener('DOMContentLoaded', () => {
