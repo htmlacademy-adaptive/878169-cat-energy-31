@@ -21,8 +21,7 @@
 }
 
 .main-nav__toggle--no-js {
-  opacity: 0;
-  cursor: default;
+  display: none;
 }
 
 .main-nav__toggle span {
@@ -122,6 +121,23 @@
     left: 0;
     border-top: 1px solid $basic-grey-2;
     border-bottom: 1px solid $basic-grey-2;
+  }
+}
+
+.main-nav__list--no-js {
+  @media #{$mobile} {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-top: 1px solid $basic-grey-2;
+    border-bottom: 1px solid $basic-grey-2;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 1px;
   }
 }
 
